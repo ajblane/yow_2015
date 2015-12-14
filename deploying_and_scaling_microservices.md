@@ -17,9 +17,9 @@
  * Artifact Types
    * Tarballs
      * Easy to create
-   * Hard to deploy (orchestration)
-     * Don't really abstract out the stack
-     * Bad for dev and ops
+     * Hard to deploy (orchestration)
+       * Don't really abstract out the stack
+       * Bad for dev and ops
    * Stack-specific
      * nuget, pip, jar
      * designed for reusable libraries, not reusable software
