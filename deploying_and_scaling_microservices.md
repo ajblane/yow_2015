@@ -14,25 +14,25 @@
   * Easy to deploy
   * Abstract out the tech stack
   * Good for dev, good for ops
- * Artifact Types
-   * Tarballs
-     * Easy to create
-     * Hard to deploy (orchestration)
-       * Don't really abstract out the stack
-       * Bad for dev and ops
-   * Stack-specific
-     * nuget, pip, jar
-     * designed for reusable libraries, not reusable software
-   * Easy to create
-     * Not necessarily easy to deploy
-   * Bad for ops - needs special platform-specific knowledge
- * OS-specific
-   * sudo apt-get install microservice
-   * os has toolchain for managing these
-     * checking versions, authorisation via keys etc
-   * Hard to create for devs
-   * Easy to deploy (in prod or locally)
-   * Abstracts the tech stack (as long as on the same platform)
+* Artifact Types
+  * Tarballs
+    * Easy to create
+    * Hard to deploy (orchestration)
+      * Don't really abstract out the stack
+      * Bad for dev and ops
+  * Stack-specific
+    * nuget, pip, jar
+    * designed for reusable libraries, not reusable software
+    * Easy to create
+    * Not necessarily easy to deploy
+    * Bad for ops - needs special platform-specific knowledge
+  * OS-specific
+    * `sudo apt-get install microservice`
+    * os has toolchain for managing these
+      * checking versions, authorisation via keys etc
+    * Hard to create for devs
+    * Easy to deploy (in prod or locally)
+    * Abstracts the tech stack (as long as on the same platform)
 * Using a Standard Build Process
   * Same build process locally as in pipeline, prod etc
     * Independent deployment of an instance of that service
@@ -43,7 +43,7 @@
   * Generally one service per machine/OS
     * Easier to reason about, control, manage
     * But expensive (one VM per instance)
-  * Can use Custom Images (eg AWS, VMWare)
+  * Custom Images (eg AWS, VMWare)
     * Images can be large, hard to create and deploy
     * Not easy to deploy - need to talk to the hypervisor, reboot etc
     * Good at abstracting out the tech stack
