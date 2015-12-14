@@ -77,7 +77,7 @@
    * Supposedly fixed in next release
    * Doesn't restart failed containers (can do within the docker engine)
   * Rackspace + O'Reilly using it. Not many others.
- * Mesos
+* Mesos
   * Master -> Agents (1:M)
   * Uses "frameworks"
    * which are really plugins
